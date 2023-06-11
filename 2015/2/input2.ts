@@ -1,4 +1,4 @@
-const input = `20x3x11
+export const input = `20x3x11
 15x27x5
 6x29x7
 30x15x9
@@ -998,20 +998,3 @@ const input = `20x3x11
 29x4x8
 21x2x22
 14x12x8`
-
-const solution = input
-  .split('\n')
-  .map((value) => value.split('x'))
-  .map((value) => value.map((value) => parseInt(value, 10)))
-  .map((value) => {
-    const a = value[0] * value[1]
-    const b = value[1] * value[2]
-    const c = value[0] * value[2]
-    const slack = [a, b, c].reduce((synthesis, element) =>
-      synthesis < element ? synthesis : element
-    )
-    return (a + b + c) * 2 + slack
-  })
-  .reduce((synthesis, element) => synthesis + element)
-
-// use transducer
