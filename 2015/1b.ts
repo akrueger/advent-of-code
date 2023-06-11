@@ -16,3 +16,5 @@ for (let i = 0; i < bracketsPrime.length - 1; i++) {
     break
   }
 }
+
+const solution = index
