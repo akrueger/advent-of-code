@@ -1,6 +1,6 @@
-import { input } from './input1'
+import { source } from './source1'
 
-const bracketsPrime = input.split('')
+const bracketsPrime = source.split('')
 
 const solution = bracketsPrime.reduce((synthesis, element) => {
   return element === '(' ? synthesis + 1 : synthesis - 1

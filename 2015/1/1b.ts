@@ -1,6 +1,6 @@
-import { input } from './input1'
+import { source } from './input1'
 
-const bracketsPrime = input.split('')
+const bracketsPrime = source.split('')
 
 let floor = 0
 let index

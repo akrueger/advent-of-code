@@ -1,6 +1,6 @@
-import { input } from './input2'
+import { source } from './source2'
 
-const solution = input
+const solution = source
   .split('\n')
   .map((value) => value.split('x'))
   .map((value) => value.map((value) => parseInt(value, 10)))

@@ -1,4 +1,4 @@
-export const input = `20x3x11
+export const source = `20x3x11
 15x27x5
 6x29x7
 30x15x9
